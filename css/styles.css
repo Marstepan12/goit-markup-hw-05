@@ -116,6 +116,7 @@ img {
 .main-nav-site:focus {
     color: var(--focused-link);
     cursor: pointer;
+    transition: color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -138,6 +139,7 @@ img {
 .main-nav-nt:focus {
     color: var(--focused-link);
     cursor: pointer;
+    transition: color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------HEADER----------*/
@@ -208,6 +210,7 @@ img {
 .social-list-footer:hover,
 .social-list-footer:focus {
     background-color: var(--success-footer);
+    transition: background-color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------FOOTER--------------*/
@@ -251,16 +254,17 @@ img {
     border: 0;
     background-color: var(--accent-cl);
     color: var(--focused-link);
-    border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
 }
 
 .btn-filter:hover,
 .btn-filter:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--pressed-btn);
     color: var(--bgr-cl);
     cursor: pointer;
+    transition: background-color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------/FILTER-------------*/
@@ -322,6 +326,7 @@ img {
 
 .content-focus:hover,
 .content-focus:focus {
+    transition: tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -407,12 +412,15 @@ img {
     margin-top: 48px;
     padding: 16px 32px;
     min-width: 169px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--pressed-btn);
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------------/HERO SECTION--------*/
@@ -583,6 +591,7 @@ img {
 .social-list:hover,
 .social-list:focus {
     background-color: var(--pressed-btn);
+    transition: background-color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------------/SECTION 3-----------*/
@@ -621,6 +630,7 @@ img {
 .partner:focus {
     color: var(--pressed-btn);
     border: 1px solid var(--pressed-btn);
+    transition: color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brend {
@@ -629,7 +639,8 @@ img {
 
 .brend:hover .brend,
 .brend:focus .brend {
-    fill: var(--pressed-btn)
+    fill: var(--pressed-btn);
+    transition: fill 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------------/SECTION 4-----------*/
@@ -661,23 +672,26 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%);
-    transition: tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal{
-position:absolute;
-display: flex;
+    position:absolute;
+    display: flex;
 
-width: 24px;
-height: 24px;
-background-color: var(--accent-cl);
-border: 1px solid rgba(0,0,0,0.1);
+    width: 24px;
+    height: 24px;
+    top: 24px ;
+    left:360px;
 
-border-radius: 50%;
-background-position: center center;
-color: #000;
-align-items: center;
-justify-content: center;
+    background-color: var(--accent-cl);
+    border: 1px solid rgba(0,0,0,0.1);
+
+    border-radius: 50%;
+    background-position: center center;
+    color: #000;
+    align-items: center;
+    justify-content: center;
 }
 
 .close{
@@ -686,10 +700,16 @@ justify-content: center;
 
 .close-modal:hover,
 .close-modal:focus{
+    border: 1px solid var(--pressed-btn);
     background-color: var(--pressed-btn);
     cursor: pointer;
+    transition: background-color 250ms, tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.close:hover, .close
+.close:focus .close{
+    fill: #fff;
+    transition: fill 250ms,tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*-------------/BACKDROP-----------*/
 /*==============/STUDIO SITE=================*/
